@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://snellvillewebsitestoday.com/wp-content/uploads/2014/12/Design-Background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+    padding: 1em;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    text-align: center;
+}
+
+.social-icons a {
+    color: white;
+    margin: 0 0.5em;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+form {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.5em 1em;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 1em 0;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+}
